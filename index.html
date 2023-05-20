@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UI card</title>
+</head>
+<body>
+    <section class="profession-filter">
+        <header>
+            <h2>Filter ui cards via their profession.</h4>
+        </header>
+        <select name="profession" class="arrow" id="profession">
+            <option value="">Profession</option>
+            <option value="developer">Developer</option>
+            <option value="admin">Admin</option>
+        </select>
+        <div id="userInfo" class="user-cards">
+        </div>
+        <input class="btn" type="button" onclick="filterUser()" value="Filter">
+    </section>
+
+    <section class="add-user">
+        <header>
+            <h2>Add a new user</h2>
+        </header>
+        <div class="user-form">
+            <div class="user-inputs">
+                <div>
+                    <label for="name">Enter Name</label><br>
+                    <input type="text" name="name" id="name" autocomplete="off">
+                </div>
+                <div>
+                    <label for="uProfession">Enter Profession</label><br>
+                    <input type="text" name="profession" id="uProfession" autocomplete="off">
+                </div>
+                <div>
+                    <label for="age">Enter Age</label><br>
+                    <input type="text" name="age" id="age" autocomplete="off"><br>
+                </div>
+            </div>
+            <input class="btn" onclick="addUser()" type="submit" value="Submit">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
